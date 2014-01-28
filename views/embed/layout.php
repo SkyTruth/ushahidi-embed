@@ -2,12 +2,6 @@
 <div id="main" class="clearingfix">
 	<div id="mainmiddle" class="floatbox withright">
 
-<!--	<?php if ($site_message != ''): ?>
-		<div class="green-box">
-			<h3><?php echo $site_message; ?></h3>
-		</div>
-	<?php endif; ?>
--->
 		<!-- right column -->
 		<div id="right" class="clearingfix">
 			
@@ -204,7 +198,7 @@
 						<!-- Web Form -->
 						<div>
 <strong>On this Website:</strong><br/>
-							<a href="<?php echo url::site().'reports/submit/'; ?>">
+							<a target="_parent" href="<?php echo url::site().'reports/submit/'; ?>">
 								<?php echo Kohana::lang('ui_main.report_option_4'); ?>
 							</a>
 						</div>
