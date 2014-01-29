@@ -13,7 +13,7 @@ Then you should have a new view at
 
 You put this in a iframe with something like 
 
-  <iframe width="960" height="650" src="http://your.domain.com/embed" />
+    <iframe width="960" height="650" src="http://your.domain.com/embed" />
 
 NOTE: you need any links displayed inside the iframe to take you out of the iframe when you clock them.
 Otherwise thigs will look funny.   This is done in the links in the plugin with 
@@ -33,8 +33,7 @@ The two places you need to make the edits are:
     if (typeof(event.feature.attributes.link) != 'undefined' &&
         event.feature.attributes.link != '') {
     
-        content += "<a target='_parent' href='"+event.feature.attrib
-    utes.link+"'>" +
+        content += "<a target='_parent' href='"+event.feature.attributes.link+"'>" +
                 "More Information</a><br/>";
     }
 
@@ -47,8 +46,7 @@ The two places you need to make the edits are:
         protected function get_title($title, $url)
         {
                 $item_name = "<a target='_parent' href='$url'>".$title."</a>";
-                $item_name = str_replace(array(chr(10),chr(13)), ' ', $item_name
-);
+                $item_name = str_replace(array(chr(10),chr(13)), ' ', $item_name);
                 return $item_name;
         }
 
