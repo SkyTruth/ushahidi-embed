@@ -15,8 +15,8 @@ You put this in a iframe with something like
 
     <iframe width="960" height="650" src="http://your.domain.com/embed" />
 
-NOTE: you need any links displayed inside the iframe to take you out of the iframe when you clock them.
-Otherwise thigs will look funny.   This is done in the links in the plugin with 
+NOTE: you need any links displayed inside the iframe to take you out of the iframe when you click them.
+Otherwise things will look funny.   This is done in the links in the plugin with 
   target='_parent' 
   
 in the anchor tags
