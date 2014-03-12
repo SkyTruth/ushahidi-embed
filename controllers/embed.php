@@ -159,7 +159,7 @@ class Embed_Controller extends Template_Controller {
 		$this->is_cachable = TRUE;
 
 		// Map and Slider Blocks
-		$div_map = new View('main/map');
+		$div_map = new View('embed/map');
 		$div_timeline = new View('main/timeline');
 
 		// Filter::map_main - Modify Main Map Block
